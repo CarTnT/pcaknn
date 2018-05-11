@@ -19,6 +19,8 @@ for i in range(0,9):
     
     im = np.array(im)  
     im = im.reshape(28,28)  
-    plotwindow = fig.add_subplot('19%d'%((i+1)%9))  
-    plt.imshow(im , cmap = 'gray')  
+    plotwindow = fig.add_subplot('33%d'%((i+1)%9))  
+    plt.imshow(im , cmap = 'gray') 
+    plt.xticks([])
+    plt.yticks([]) 
 plt.show() 
